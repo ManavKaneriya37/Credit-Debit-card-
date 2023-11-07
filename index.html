@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Input label</title>
+  </head>
+  <div>
+    <div class="container">
+
+      <div class="card card1">
+        <div class="inputCard1">
+          <div class="cardNum">
+            <label for="cardNum">Card Number</label>
+            <input type="text" id="CardNum" name="cardNum" maxlength="14" />
+          </div>
+          <div class="btmData">
+            <div class="holder">
+              <label for="HolderNm">Cardholder Name</label>
+              <input type="text" id="HolderName"/>
+            </div>
+            <div class="exp">
+              <label for="Exp">Expiration</label>
+              <input type="text" id="ExpDate"  maxlength="5"/>
+            </div>
+          </div>
+          </div>
+          <button id="submit" onclick="sendData()">Submit</button>
+        </div>
+    
+        
+      <div class="card">
+        <div class="top">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/11845/11845899.png"
+            alt="simback"
+            class="simpattern"
+          />
+          <img
+            src="https://www.freepnglogos.com/uploads/mastercard-png/mastercard-logo-mastercard-logo-png-vector-download-19.png"
+            alt="mstrcrd"
+            class="name"
+          />
+        </div>
+        <div class="inputCard1">
+          <div class="upData">
+              <div class="cardNum">
+                <label for="cardNum">Card Number</label>
+                 <input type="text" id="TakeCardNum" name="cardNum" maxlength="14" disabled/>
+              </div>
+            <div class="exp">
+              <label for="Exp">Expiration</label>
+              <input type="text" id="TakeExpDate"  maxlength="5" disabled/>
+            </div>
+          </div>
+        </div>
+            <div class="holder">
+              <label for="HolderNm">Cardholder Name</label>
+              <input type="text" id="TakeHolderName" disabled />
+          </div>
+        <div>
+      </div>
+
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
+
